@@ -1,4 +1,4 @@
-#include "Nature.h"
+﻿#include "Nature.h"
 #include <iostream>
 using namespace std;
 

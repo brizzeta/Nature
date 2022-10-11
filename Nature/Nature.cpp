@@ -1,4 +1,4 @@
-#include "Nature.h"
+﻿#include "Nature.h"
 
 Fox::Fox(int val_amount, int val_age)
 {
@@ -6,18 +6,22 @@ Fox::Fox(int val_amount, int val_age)
 	age = val_age;
 }
 
+//получить количество лис
 int Fox::Get_amount() {
 	return amount;
 }
 
+//получить возраст лис
 int Fox::Get_age() {
 	return age;
 }
 
+//изменить количество лис
 void Fox::Set_amount(int value) {
 	amount = value;
 }
 
+//изменить возраст лис
 void Fox::Set_age(int value) {
 	age = value;
 }
@@ -29,18 +33,22 @@ Rabbit::Rabbit(int val_amount, int val_age)
 	age = val_age;
 }
 
+//получить количество кроликов 
 int Rabbit::Get_amount() {
 	return amount;
 }
 
+//получить возраст кроликов
 int Rabbit::Get_age() {
 	return age;
 }
 
+//изменить количество кроликов
 void Rabbit::Set_amount(int value) {
 	amount = value;
 }
 
+//изменить возраст кроликов
 void Rabbit::Set_age(int value) {
 	age = value;
 }
@@ -52,18 +60,22 @@ Grass::Grass(int val_amount, int val_age)
 	age = val_age;
 }
 
+//получить количество травы
 int Grass::Get_amount() {
 	return amount;
 }
 
+//получить возраст травы
 int Grass::Get_age() {
 	return age;
 }
 
+//изменить количество травы
 void Grass::Set_amount(int value) {
 	amount = value;
 }
 
+//изменить возраст травы
 void Grass::Set_age(int value) {
 	age = value;
 }
@@ -75,14 +87,17 @@ Area::Area(string str_area, int val_am_fox, int val_age_fox, int val_am_rabb, in
 	year = 1;
 }
 
+//получить количество лис 
 int Area::Get_Fox_amount() {
 	return fox.Get_amount();
 }
 
+//получить количество кроликов
 int Area::Get_Rabbit_amount() {
 	return rabbit.Get_amount();
 }
 
+//проверка возраста  
 void Area::Check_age()
 {
 	if (grass.Get_age() > 1) {
@@ -105,6 +120,7 @@ void Area::Check_age()
 	}
 }
 
+//проверка количества
 void Area::Check_amount()
 {
 	if (grass.Get_amount() == 0) {
